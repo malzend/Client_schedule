@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="521.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddAppointmentController">
+   <children>
+      <VBox layoutX="72.0" layoutY="65.0" prefHeight="341.0" prefWidth="104.0" style="-fx-spacing: 20;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Description:" wrappingWidth="91.9140625" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Title" wrappingWidth="95.41748046875" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Location:" wrappingWidth="93.22900390625" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Contact:" wrappingWidth="69.53857421875" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Type:" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Start Time:" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="End time:" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Start Date:" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="End Date:" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Appointment ID:" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Customer ID:" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Use ID:" />
+         </children>
+      </VBox>
+      <VBox fx:id="endTimeText" layoutX="184.0" layoutY="55.0" onDragDetected="#endTimeTextAction" prefHeight="431.0" prefWidth="155.0" style="-fx-spacing: 10;">
+         <children>
+            <TextField fx:id="appoiitmentDescription" onAction="#appoiitmentDescriptionTextAction" />
+            <TextField fx:id="titleTextField" onAction="#titleTextAction" prefHeight="26.0" prefWidth="122.0" />
+            <TextField fx:id="locationAppointmentText" onAction="#locationAppointmentTextAction" />
+            <ComboBox fx:id="contactAppointmentCombBox" onAction="#contactCombBoxAction" prefHeight="26.0" prefWidth="162.0" />
+            <TextField fx:id="typeAppointmentText" onAction="#typeAppointmentTextAction" />
+            <TextField fx:id="startTimeText" onAction="#startTimeTextAction" />
+            <TextField fx:id="endtTimeText" editable="false" onAction="#endTimetText" />
+            <TextField fx:id="startDateText" onAction="#startDateTextActiom" />
+            <TextField fx:id="endDateText" onAction="#endDateTextAction" />
+            <TextField fx:id="appoitntmentIDText" disable="true" onAction="#appointmentIDTextAction" />
+            <TextField fx:id="customerIDText" disable="true" onAction="#customerIDTextAction" />
+            <TextField fx:id="UserIDText" disable="true" onAction="#UserIDTextAction" />
+         </children>
+      </VBox>
+      <VBox layoutX="422.0" layoutY="389.0" prefHeight="83.0" prefWidth="100.0" style="-fx-spacing: 8;">
+         <children>
+            <Button fx:id="addButton" mnemonicParsing="false" onAction="#appointmentButtonAction" prefHeight="0.0" prefWidth="99.0" text="Add" />
+            <Button fx:id="exitButton" mnemonicParsing="false" onAction="#appointmentexitButtonAction" prefHeight="26.0" prefWidth="100.0" text="Exit" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReportController">
+   <children>
+      <VBox layoutX="72.0" layoutY="94.0" prefHeight="200.0" prefWidth="215.0" style="-fx-spacing: 10;">
+         <children>
+            <Button fx:id="totaleCustomerButton" mnemonicParsing="false" onAction="#totaleCustomerAction" prefHeight="26.0" prefWidth="413.0" text="Total Customer" />
+            <Button fx:id="ScheduleForEachContactButton" mnemonicParsing="false" onAction="#ScheduleForEachContactButton" prefHeight="26.0" prefWidth="230.0" text="Schedule For each Contact " />
+            <Button fx:id="whatToDoButton" mnemonicParsing="false" onAction="#whatToDoButtonAaction" prefHeight="26.0" prefWidth="231.0" text="What  to do" />
+         </children>
+      </VBox>
+      <Button fx:id="exiteButton" layoutX="374.0" layoutY="200.0" mnemonicParsing="false" onAction="#exitButtonAction" prefHeight="26.0" prefWidth="99.0" text="Exit" />
+   </children>
+</AnchorPane>
